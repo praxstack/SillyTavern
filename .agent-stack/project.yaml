@@ -1,0 +1,18 @@
+project: sillytavern-fork
+owner: praxstack
+upstream: https://github.com/SillyTavern/SillyTavern.git
+fork: https://github.com/praxstack/SillyTavern
+base_branch: release
+workflow: spec-driven (spec -> eng/design review -> tickets -> implement -> code-review -> qa -> PR)
+branches:
+  system: chore/agent-stack-system
+  feature: feat/gemini3-native-tts-hardening
+stack:
+  backend: Node.js (Express, ESM)
+  frontend: vanilla JS + jQuery (public/)
+  tests: jest (tests/), playwright (tests/playwright.config.js)
+  lint: eslint (npm run lint)
+conventions:
+  indent: 4 spaces
+  eol: lf
+  commit_style: conventional commits
